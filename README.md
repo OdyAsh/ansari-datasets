@@ -39,5 +39,31 @@ Special thanks to Wael Hamza who led this effort as well as Saifeldeen Hadid and
 - in 33 out of 33 ratings (100%) it was helpful (one was "not set"). 
 - It used references on 26 out of 32 questions (82%). It did not use references on 6 questions, and there were 2 "no ratings." 
 - There were 0 instances of hallucination detected.  
-- There were 0 instances of toxic language usage. 
+- There were 0 instances of toxic language usage.
+
+## Quran Tadabbor Wa Aamal (QTA)
+
+The QTA dataset is a collection of quiz questions based on the Quran Tadabbor Wa Aamal book which is focused on the Quran, particularly on understanding (tadabbor) and acting upon (aamal) its teachings. The dataset is organized into sub-quizzes, which are then consolidated into a comprehensive quiz. 
+
+The `quran-tadabbor-wa-aamal\the-whole-quiz\quran-tadabbor-wa-aamal-quiz.md/csv` files:
+* contain all the quiz questions and answers in a single file
+* gets updated whenever a new sub-quiz is added or an existing one is modified
+* will be the main resource to test Ansari on once it's finished (specifically, the `.csv file`).
+
+### Dataset Structure
+
+- **Sub-quizzes**: Individual quiz files generated from different sources (HTML forms, book content)
+- **Main Quiz Files**: Consolidated files containing all the sub-quizzes
+
+### Contributing to the QTA Dataset
+
+The QTA dataset is generated using GitHub Copilot with custom prompt files. The files are not final and may evolve over time. To contribute to this dataset:
+
+1. Follow the guidelines in [How to Run QTA Prompt Files](docs/using-ide-ai/how-to-run-qta-prompt-files.md)
+2. Use the provided prompt files to:
+   - Convert HTML quiz questions to the proper format
+   - Generate quiz questions from book content
+   - Update the main quiz files with new questions
+
+The AI-assisted workflow ensures consistent formatting and quality across the dataset while making it easy for contributors to add new content.
 
