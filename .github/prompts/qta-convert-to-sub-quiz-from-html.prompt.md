@@ -1,6 +1,6 @@
 ---
 mode: 'agent'
-tools: ['read_file', 'insert_edit_into_file', 'replace_string_in_file', 'file_search', 'list_dir']
+tools: ['codebase', 'editFiles', 'fetch', 'runCommands', 'runNotebooks', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'usages']
 description: 'Convert HTML quiz questions to Markdown and CSV formats for Quran Tadabbor Wa Aamal sub-quizzes'
 ---
 
@@ -34,7 +34,8 @@ Your goal is to convert quiz questions from an HTML file to properly formatted M
    - options: All options separated by commas
    - correct: The correct answer
 6. Add a table of contents at the beginning of the MD file
-7. Ensure each question has exactly 4 options (if source HTML has less/more options, add/remove as necessary)
+7. Ensure that you write down the EXACT questions and answers in the processed html file, don't be creative.
+   7.1 However, if the correct answer is more than 1 option , then and only then are you allowed to be creative by combining them into a single option, and choose that as the correct answer
 
 ## Process:
 
@@ -45,10 +46,9 @@ Your goal is to convert quiz questions from an HTML file to properly formatted M
 5. Update the table of contents accordingly in the MD file
 6. Create or update both the MD and CSV files
 
-## Instructions:
+## Formatting Details:
 
 If the Markdown file already has some questions, add only the missing ones.
-If you're not sure about the correct answer, make your best judgment and mention it.
 Always maintain RTL formatting for Arabic text.
 Ensure all text is properly encoded and displays correctly.
 For the CSV file, follow the format: category,question,options,correct
