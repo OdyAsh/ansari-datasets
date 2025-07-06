@@ -12,7 +12,7 @@ Your goal is to generate multiple-choice questions based on content from Islamic
 
 1. Automatically detect the latest book content file (book-content-X.md) in the sub-quizzes directory
 2. Create or update the corresponding quiz files (quiz-X.md and quiz-X.csv)
-3. Generate 10 well-formulated multiple-choice questions in Arabic (or less, if the number of paragraphs in book-content-X.md is a small number)
+3. Generate a number of well-formulated multiple-choice questions in Arabic; This number is based on the number of paragraphs in book-content-X.md
 4. Create a new quiz section in the MD file with an appropriate title
 5. Ensure each question follows this structure in the MD file:
    ```markdown
