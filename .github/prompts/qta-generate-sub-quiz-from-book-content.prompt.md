@@ -1,6 +1,6 @@
 ---
 mode: 'agent'
-tools: ['codebase', 'editFiles', 'fetch', 'runCommands', 'runNotebooks', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'usages']
+tools: ['codebase', 'editFiles', 'fetch', 'runCommands', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'usages']
 description: 'Generate quiz questions from Quran book content for Tadabbor Wa Aamal sub-quizzes'
 ---
 
